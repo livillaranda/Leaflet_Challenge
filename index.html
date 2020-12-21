@@ -5,30 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Leaflet-Step-1</title>
+  <title>Reported Earthquakes</title>
 
   <!-- Marker Cluster CSS -->
-  <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" type="text/css" href="assets/Leaflet.markercluster/dist/MarkerCluster.css">
+  <link rel="stylesheet" type="text/css" href="assets/Leaflet.markercluster/dist/MarkerCluster.Default.css">
 
   <!-- Source CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
-  <link rel="stylesheet" type="text/css" href="assets/leaflet/li_leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+  <!-- <link rel="stylesheet" type="text/css" href="assets/leaflet/li_leaflet.css"> -->
 
 </head>
 
 <body>
-  <!-- Map Visual -->
+
+  <!-- Header -->
+  <div>
+  <h2>Reported Earthquakes (Last 7 Days)</h2>
+  </div>
+  
+<!-- Map Visual -->
   <div id="map">
 
   </div>
 
   <!-- JS Files -->
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin=""></script>
+  <!-- <script src="assets/leaflet/leaflet-src.js"></script> -->
   <script src="assets/d3/d3.js"></script>
-  <script type="text/javascript"
-    src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+  <script src="assets/Leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
 
   <!-- SOURCE JS -->
   <script type="text/javascript" src="static/js/config.js"></script>
