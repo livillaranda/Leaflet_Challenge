@@ -1,5 +1,5 @@
 body {
-  padding: 0;
+  padding: -5;
   margin: 0;
 }
 
@@ -7,9 +7,20 @@ body {
 body,
 html {
   height: 100%;
-  text-align: center;
 }
 
-#title {
-  position: center;
+.legend {
+  padding: 10px;
+  line-height: 18px;
+  color: black;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.legend i {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  opacity: 0.75;
 }
